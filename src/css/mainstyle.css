@@ -1,0 +1,296 @@
+
+.main_title h2{
+    font-size:2.6rem ;
+  
+  }
+  .testimonials-stu{
+    position: relative;
+    margin-top: 3em;
+  }
+  
+  #layer-testi{
+    height: 80px;
+    width: 100%;
+    /* background-color:rgba(0,0,0,.3); */
+    
+  }
+  #main-testi{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top:60%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  #slider-testi{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+  #slider-testi{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  #slider-testi li{
+    float: left;
+    margin: 0px 10px;
+    white-space: nowrap;
+  }
+  #slider-testi li:hover{
+    cursor: pointer;
+  }
+  .tooltip-testi{
+    height: 45px;
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    margin: 25px;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+    z-index: -1;
+  }
+  .tooltip-testi:after{
+    content: '\25bc';
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .testi{
+    margin: 0px auto;
+    margin-bottom: 2px;
+  }
+
+  :root {
+    --surface-color: #fff;
+    --curve: 10;
+  }
+  
+  .pop-course-bx{
+    padding: 0 12px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 3rem;
+    list-style-type: none;
+    /* padding: 10px 0; */
+    
+  }
+  .all-courses-card{
+    gap: 1rem!important;
+  }
+  
+  .card-pop{
+    position: relative;
+    display: block;
+    height: 420px;  
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    border: .5px solid rgba(0, 0, 255, 0.219);
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.275);
+  }
+  .card-pop:hover{
+    transform: scale(1.02);
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.275);
+
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+    object-position: top;
+  }
+  .card-pop:hover .card__image{
+    scale: 1.05;
+  }
+
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding: 10px; */
+    z-index: 1;      
+    border-radius: 30px 0 0 0;
+    /* background-color: rgb(232, 230, 230); */
+    background-color: var(--surface-color);      
+    transform: translateY(0%);
+    transition: .2s ease-in-out;
+    box-shadow: 0 0 5px black;
+  }
+  
+  .card-pop:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.1em 1em .3em 1em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    transform: translateY(-0%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 99%;
+    right: -1px;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card-pop:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1.2em;
+    margin: 0;
+    color: #44343c;
+    font-weight: 700;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-size: .8em; 
+    color: #847a7f;  
+  }
+  
+  .card__status {
+    font-size: 1em;
+    color: #797276;
+  }
+  
+  .card__description {
+    padding: 0 1em;
+    
+    color: #94848c;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+.course-btn{
+  margin:8px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  color: rgb(255, 255, 255);
+  /* background: radial-gradient(rgb(103, 103, 119) 50%,rgb(74, 74, 221)); */
+  background-color: rgb(20, 11, 72);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgba(113, 68, 68, 0.287);
+  transition: all .2s;
+  font-weight: 600;
+}
+.course-btn:hover{
+  color: black;
+  background: white;
+  box-shadow: 0 0 10px 1px rgba(82, 45, 45, 0.651);
+  letter-spacing: 2px;
+
+}
+.allPrograms{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.owl-nav button i{
+    /* border: 1px solid black; */
+    padding: 15px 7px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.397);
+}
+
+.owl-nav button i:hover{
+    background: rgba(0, 0, 0, 0.222);
+}
+.pdisplay-show{
+  display: none;
+}
+
+@media screen and (max-width:768px){
+  .pdisplay-show{
+    display: block;
+  }
+  .pdisplay-none{
+    display: none;
+  }
+}
+/* -------------------------------------- */
+
+
+
+.reviews-box {
+  position: relative;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.pagination-container {
+  padding-top: 4px;
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pagination-number,
+.pagination-button{
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  border-radius: .2rem;
+  font-weight: 700;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+  color: #9fa7ab;
+}
+.pagination-button:disabled{
+  background: #fff;
+  color: #8d9599;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background: #00668a;
+}

@@ -1,0 +1,24 @@
+@media screen and (max-width: 993px){
+    .content h2{
+        
+        
+        position:relative;
+        left: -19%;
+    }
+    .content{
+        
+    margin-right: 32%;
+    margin-left: 0%;
+    width: fit-content;
+}
+.content p{
+    position:relative;
+    left: -14%;
+    width: 83%;
+   
+}
+.p{
+    position:relative;
+    left: -14%;
+}
+}

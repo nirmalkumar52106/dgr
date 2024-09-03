@@ -1,0 +1,31 @@
+.courseBannreicon,
+.fa-circle-check{
+    color:#ffc400;
+    margin-right: .4rem;
+    margin-top: .5rem;
+}
+.course-overview-head h6{
+    background-color: rgb(20, 11, 72);
+    color: #fdc801;
+    padding: 15px 15px 15px 15px;
+    font-size: 2.2rem!important;
+
+}
+.Coursedetial-icon i{
+    color: rgb(20, 11, 72);
+    margin:1rem 0 1rem 0;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+
+}
+.Ftext{
+    color: rgb(20, 11, 72);
+    font-weight: 600!important;
+    letter-spacing: .5px;
+    font-size: 1.6rem;
+
+}
+.accordion-body ul li{
+    list-style-type:square!important;
+    margin-left: 2rem;
+}
